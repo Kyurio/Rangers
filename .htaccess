@@ -1,0 +1,17 @@
+RewriteEngine on
+
+#Redirecciona al index
+RewriteRule ^$ /Rangers/views/index.php [L]
+
+#buscar el archivo ingresado en la url
+RewriteCond %{REQUEST_FILENAME} !-f
+
+#Urls amigables
+RewriteRule ^([a-zA-Z0-9/]+)$ /Rangers/views/$1.php [NC,L]
+
+
+#Error
+ErrorDocument 404 /Rangers/error/404.php
+ErrorDocument 500 /Rangers/error/500.php
+ErrorDocument 403 /Rangers/error/403.php
+ErrorDocument 300 /Rangers/error/300.php

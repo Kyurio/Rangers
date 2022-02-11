@@ -1,0 +1,2 @@
+Options -indexes
+ErrorDocument 403 /Rangers/error/403.php

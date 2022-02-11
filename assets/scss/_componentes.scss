@@ -1,0 +1,48 @@
+.image-one {
+
+  height: 550px;
+  background-image: url("http://www.rangersdetalca.com/portal/wp-content/uploads/2022/01/IMG-20220118-WA0009-1024x682.jpg");
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.mt-15 {
+  margin-top: 10rem !important;
+}
+
+
+.btn-black {
+  background-color: $negro !important;
+  color: $blanco;
+}
+
+.contenido {
+  height: 500px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #FFFFFF !important;
+}
+
+.contenido:before {
+  content:'';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(155,0,0,0.6);
+}
+
+
+.principal {
+
+  font-size: 120px;
+
+}

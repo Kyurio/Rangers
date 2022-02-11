@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Pridi:wght@300&display=swap");
+body {
+  font-family: "Pridi", serif;
+  background-color: #040303;
+  color: #ffff;
+}
+
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+  h1 h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.image-one {
+  height: 550px;
+  background-image: url("http://www.rangersdetalca.com/portal/wp-content/uploads/2022/01/IMG-20220118-WA0009-1024x682.jpg");
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mt-15 {
+  margin-top: 10rem !important;
+}
+
+.btn-black {
+  background-color: #040303 !important;
+  color: #ffff;
+}
+
+.contenido {
+  height: 500px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #FFFFFF !important;
+}
+
+.contenido:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(155, 0, 0, 0.6);
+}
+
+.principal {
+  font-size: 120px;
+}
+
+.sidevar {
+  min-height: 100vh;
+  position: fixed;
+  width: 100px;
+  margin-right: 20px;
+  background-color: #040303 !important;
+  color: #ffff;
+}
+
+.active {
+  background-color: #9B0000 !important;
+  color: #ffff !important;
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-links a {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffff;
+  margin: 0 30px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.social-links a .fab {
+  font-size: 30px;
+  line-height: 80px;
+  position: relative;
+  z-index: 10;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.social-links a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -90px;
+  left: 0;
+  background: #9B0000;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.social-links a:hover::after {
+  top: 0;
+}
+
+.social-links a:hover .fab {
+  color: #fff;
+}
+
+.social-links a:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
